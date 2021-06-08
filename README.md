@@ -110,10 +110,7 @@ Our DataFrame isn't that big, so it was easy to generate a report with libraries
 
 ![ex](https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/pairplot2.png)
 
-<p float="left">
-  <img src="https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/pairplot1.png" width="100" />
-  <img src="https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/pairplot2.png" width="100" />
-</p>
+
 
 
 
