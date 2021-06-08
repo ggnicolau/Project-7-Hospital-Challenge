@@ -106,11 +106,11 @@ I decided to ask my colleague who challenged me about the nature of the data and
 
 Our DataFrame isn't that big, so it was easy to generate a report with libraries such as Seaborn Pairplot and Pandas Profiling.
 
-![ex](https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/pairplot1.png)
+![ex](https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/1.png)
 
 
 
-![ex](https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/pairplot2.png)
+![ex](https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/2.png)
 
 
 
