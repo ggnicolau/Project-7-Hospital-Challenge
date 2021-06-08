@@ -108,6 +108,8 @@ Our DataFrame isn't that big, so it was easy to generate a report with libraries
 
 ![ex](https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/pairplot1.png)
 
+
+
 ![ex](https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/pairplot2.png)
 
 
