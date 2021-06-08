@@ -105,10 +105,11 @@ I decided to ask my colleague who challenged me about the nature of the data and
 #### a) Ploting and exploring the data:
 
 Our DataFrame isn't that big, so it was easy to generate a report with libraries such as Seaborn Pairplot and Pandas Profiling.
+<div align="center">
 
 ![ex](https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/1.png)
 
-
+</div>
 
 ![ex](https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/2.png)
 
