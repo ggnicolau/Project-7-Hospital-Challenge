@@ -105,13 +105,26 @@ I decided to ask my colleague who challenged me about the nature of the data and
 #### a) Ploting and exploring the data:
 
 Our DataFrame isn't that big, so it was easy to generate a report with libraries such as Seaborn Pairplot and Pandas Profiling.
+
 <div align="center">
-
-![ex](https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/1.png)
-
+<img src="https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/pairplot1.png">
 </div>
 
-![ex](https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/2.png)
+<div align="center">
+<img src="https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/1.png">
+</div>
+
+
+What we can see:
+* Something close to a normal distribution on column x1
+* Left skewed distribution on column x2
+* Uniform distribution on column x3
+* Seems imbalanced for the values from our target variable in a geometric progression pattern
+
+> We can infer that this data was probably artificially created so we can have so certain shapes and distributions that are well known for data analysts
+
+  
+
 
 
 
