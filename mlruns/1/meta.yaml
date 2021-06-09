@@ -1,0 +1,4 @@
+artifact_location: file:///C:/Users/user/Documents/1.%20GitHub/Albert_Einstein/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: rain_tomorrow_exp

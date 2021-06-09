@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/Documents/1.%20GitHub/Albert_Einstein/mlruns/1/e2e6cb04e3b94a0d96f12b9716813e66/artifacts
+end_time: 1623212134132
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: e2e6cb04e3b94a0d96f12b9716813e66
+run_uuid: e2e6cb04e3b94a0d96f12b9716813e66
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1623212133817
+status: 3
+tags: []
+user_id: user
