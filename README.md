@@ -1,6 +1,8 @@
 <div align="center">
 <img src="https://coursereport-production.imgix.net/uploads/school/logo/84/original/logo-ironhack-blue.png?w=200&h=200&dpr=1&q=75">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx0OPgRAs3027QxPjMtXI-1UtLxObz5x6rpvb5bVfEASQJ19fs9Bi14CLOOwwhtJoYXw&usqp=CAU">
 </div>
+
 
 <div align="left">
 
@@ -13,8 +15,8 @@
 <div align="center">
 
 [visitors](https://visitor-badge.glitch.me/badge?page_id=ggnicolau.visitor-badge)
-[![Created Badge](https://badges.pufler.dev/created/ggnicolau/Ironhack_final)](https://badges.pufler.dev)
-[![Updated Badge](https://badges.pufler.dev/updated/ggnicolau/Ironhack_final)](https://badges.pufler.dev)
+[![Created Badge](https://badges.pufler.dev/created/ggnicolau/Project-7-Hospital-Challenge)](https://badges.pufler.dev)
+[![Updated Badge](https://badges.pufler.dev/updated/ggnicolau/Project-7-Hospital-Challenge)](https://badges.pufler.dev)
 [![Commits Badge](https://badges.pufler.dev/commits/monthly/ggnicolau)](https://badges.pufler.dev)
 [![Repos Badge](https://badges.pufler.dev/repos/ggnicolau)](https://badges.pufler.dev)
 [![Years Badge](https://badges.pufler.dev/years/ggnicolau)](https://badges.pufler.dev)
@@ -125,3 +127,30 @@ https://stackoverflow.com/questions/31421413/how-to-compute-precision-recall-acc
 https://towardsdatascience.com/multi-class-metrics-made-simple-part-ii-the-f1-score-ebe8b2c2ca1
 https://medium.com/mlearning-ai/shap-force-plots-for-classification-d30be430e195
 https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12
+
+
+## Versioning
+
+1.0.0.0
+
+## Autor
+
+* **Guilherme Giuliano Nicolau**: @ggnicolau (https://github.com/ggnicolau)
+
+</div>
+
+<!--GITHUB_ACTIVITY:{"rows": 5}-->
+
+---
+
+<div align="center">
+
+<br/><br/>
+![Quote](https://github-readme-quotes.herokuapp.com/quote?theme=dark&animation=grow_out_in)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ggnicolau&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
+![https://medium.com/@ggnicolau](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)
+
+
+</div>
