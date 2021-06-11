@@ -74,41 +74,6 @@ One day at LinkdIn, a data scientist worker from a famous private Hospital in SÃ
 * ipywidgets
 * mpl_toolkits
 
-
-
-
-
-
-
-
-
-
-* os
-* glob
-* tika
-* pandas
-* regex
-* Audio
-* sqlalchemy
-* tqdm
-* warnings
-* csv
-* stanza
-* gensim
-* texthero
-* nltk
-* SpaCy
-* numpy
-* pprint
-* logging
-* time
-* random
-* operator
-* pyLDAvis
-* Matplotlib
-* Sklearn
-
-
 ## Scripts
 * Conclusion Report: https://github.com/ggnicolau/Project-7-Hospital-Challenge/tree/main/conclusion_report
 * Repository: https://github.com/ggnicolau/Albert_Einstein
