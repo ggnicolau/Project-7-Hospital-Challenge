@@ -83,201 +83,45 @@ One day at LinkdIn, a data scientist worker from a famous private Hospital in S�
 * Matplotlib
 * Sklearn
 
-## 1. What about the data?
-As soon as I got the data in my hands, I've opened it on Atom, using Pandas library from Python. I had no info about it. As I opened, I started exploring it with some basic functions from Pandas.
 
-We have:
-* Three float columns (x1, x2, x3)
-* One categorical Column ('target' - to predict)
-* The target column has three values (low, medium, high)
-* 6000 rows (60%) are lows
-* 3000 (30%) are mediums
-* 1000 (10%) are highs
-* 10000 rows on total
-* All filled (no nulls)
-
-At this moment I've used my intuition and experience. Usually after this stage from checking the data I could already infer something, but this wasn't true here. There was no context. I couldn't tell the nature of the data at all. I couldn't tell what each column represented, I couldn't even figure out a metric for the values to check if they were in different scales.
-
-I decided to ask my colleague who challenged me about the nature of the data and the motive of the prediction of our target. He couldn't give me a clue and told me to treat the data as it is, pure and simple. I thought:
-
-> Well, this can make my challenge harder and more exciting. Or even it can make it easier! I can't wait to find out!
-
-#### a) Ploting and exploring the data:
-
-Our DataFrame isn't that big, so it was easy to generate a report with libraries such as Seaborn Pairplot and Pandas Profiling.
-
-<div align="center">
-<img src="https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/pairplot1.png">
-</div>
-
-<div align="center">
-<img src="https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures/1.png">
-</div>
-
-
-What we can see:
-* Something close to a normal distribution on column x1
-* Left skewed distribution on column x2
-* Uniform distribution on column x3
-* Seems imbalanced for the values from our target variable in a geometric progression pattern
-
-> We can infer that this data was probably artificially created so we can have so certain shapes and distributions that are well known for data analysts
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## O que é Topic Model?
-* não-supervisionado;
-* não-estruturado;
-* LDA retorna tópicos. O que é isso?
-  * A principal característica dos modelos de tópicos é sua capacidade de realizar uma redução dimensional do espaço definido pelo modelo bag-of-words de forma a capturar estruturas semânticas presentes no espaço. Além disso temos que o novo espaço, dito espaço de tópicos, é um modelo probabilístico para a ocorrência de palavras nos documentos; ou seja, busca-se a covariância entre as palavras em um documento e a relação entre os documentos (Corpus). Vamos além da contagem de palavras.
-  * Temos menos bias do que o 'tageamento' de um sujeito e, portanto, melhor classificação que um humano; é ótimo, por exemplo, para informational retrieveal, ou seja, encontrar um conteúdo textual específico em um grande conjunto de dados;
-* Um topico se apresenta assim:
-  * TÓPICOS DE CULTURA
-
-  > (17, '0.228*"anos" + 0.120*"show" + 0.097*"projeto" + 0.080*"apresentacoes" + 0.076*"musicas" + 0.074*"banda" + 0.025*"acervo" + 0.022*"largo" + 0.018*"pontos" + 0.018*"novo"')
-
-  > (4, '0.164*"sobre" + 0.112*""o" + 0.092*"biblioteca" + 0.075*"diretor" + 0.062*"exposicao" + 0.054*"obras" + 0.051*"reune" + 0.042*"andrade" + 0.042*"mario" + 0.037*"primeiro"')
-
-  > (10, '0.181*"ate" + 0.126*"danca" + 0.092*"inscricoes" + 0.069*"artistas" + 0.068*"musical" + 0.066*"programa" + 0.052*"janeiro" + 0.049*"recebe" + 0.035*"atividades" + 0.023*"grupos"')
-
-* Quais as vantagens de ser sem estrutura e sem supervisão?
-  * Não precisamos de 'target' e não tem interferência do sujeito na interpretação do objeto, ou seja, não há interferência humana na definição dos sentidos (semântica) dentro de nosso Corpus.
-
-## Worfklow
-Todos os códigos podem ser encontrados na pasta ```py files``` ordenados
-* Primeiro extraímos o conteúdo dos sites das secretarias através de PHP;
-* Automatizado através de uma função, incorporamos tudo em um pandas DataFrame, cada linha com duas colunas: data e texto;
-* Sincronizamos com um banco de dados postgreSQL;
-* Automatizado através de uma função, limpamos o texto da tabela (tiramos url, maiusculas, acentos, números, datas, letras únicas, simbolos, stopwords etc);
-* Fizemos lematização sem definir função para ter controle de erros (processo lento de deep learning - nem tudo apresentado aqui incorporou a lematização);
-* Criamos uma função para automatizar o modelo LDA para cada recorte de análise;
-* Não incorporamos hiperparâmetros: nossa intenção é mostrar para o cliente como o algoritmo funciona com os mesmos parâmetros em diferentes conjuntos de dados;
-* Visualizações (automatizamos o processo em funções para retornar uma visualização para cada secretaria por gestão);
-
-## Visualizações
-* WordClouds:
-
-<div align="center">
-
-![ex](https://github.com/ggnicolau/Ironhack_final/blob/main/Presentation/Images/assistencia_social_doria_covas21.png)
-
-</div>
-
-* pyLDAvis:
-  * Não foi possível incorporar o gráfico dinâmico em HTML no GitHub. Faça download do arquivo seguranca_urbana.html e abra em seu navegador para ver um exemplo do gráfico dinâmico pyLDAvis: <https://github.com/ggnicolau/Ironhack_final/tree/main/Presentation>
-<br/><br/>
-  <div align="center">
-
-  ![ex](https://github.com/ggnicolau/Ironhack_final/blob/main/All%20Visualizations/pyLDAvis_example.png)
-
-  </div>
-
-* Cruzamento de assuntos criados por nós com tópicos no corpus por gestão;
-  * Cruzamos o tópico de segurança com o tópico de saúde para ver qual o principal documento do Corpus o algoritmo nos retornava:
-  > 'GCM encaminha homem que tentou suicídio a atendimento social    5/01/2010  Texto: Gláucia Arboleya A Guarda Civil Metropolitana encaminhou, na última quarta-feira (13/1) por volta das 14h30, um homem que tentou se suicidar no Viaduto do Chá para o Atendimento Médico Ambulatorial (AMA), na Sé. O homem é natural da cidade de Paulo Afonso, Bahia, e estava em situação de risco há 30 dias. A Inspetoria do Gabinete do Prefeito visualizou a vítima do lado externo da grade do viaduto e foi até o local. Após conversa com o homem, ele aceitou a sair da posição de risco do viaduto e acompanhar os guardas civis metropolitanos para a AMA. Ele estava acompanhado por um rapaz de 18 anos, também em situação vulnerável há 30 dias, natural de Val Paraíso – interior de São Paulo. Ambos foram encaminhados para atendimento médico e, posteriormente, ao atendimento social para acolhimento em albergue da região até que seja viabilizado o retorno para as suas cidades de origem. No ano passado a GCM também atendeu um homem que tentou se suicidar da passarela do DETRAN, no Ibirapuera. O encaminhamento de pessoa em situação de risco é um dos programas prioritários da GCM.'
-
-* Retorno de documentos mais importantes por tópico no corpus e de cruzamento entre tópicos;
-  * Criamos um grupo de palavras sobre determinado assunto e cruzamos com os tópicos no Corpus para entender como era a distribuição dos assuntos entre cada gestão:
-
-Haddad:
-
-<div align="center">
-
-![ex1:Haddad](https://github.com/ggnicolau/Ironhack_final/blob/main/Presentation/Images/Captura%20de%20Tela%20(192).png)
-
-![ex1:Haddad](https://github.com/ggnicolau/Ironhack_final/blob/main/Presentation/Images/haddad.png)
-
-</div>
-
-Dória:
-
-<div align="center">
-
-![ex2:Dória](https://github.com/ggnicolau/Ironhack_final/blob/main/Presentation/Images/Captura%20de%20Tela%20(194).png)
-
-![ex2:Dória](https://github.com/ggnicolau/Ironhack_final/blob/main/Presentation/Images/D%C3%B3ria.png)
-
-</div>
-
-## Algumas conclusões
-Analisando algumas secretarias e comparando as gestões percebemos que em seus discursos (mais gráficos podem ser encontrados na pasta Presentation desse projeto):
-
-1) Na assistência social, Dória-Covas parecem dar mais atenção ao trabalho e mercado, como capacitação das pessoas em situação de vulnerabilidade. Haddad busca dar mais atenção aos direitos humanos e às minorias (mulheres, indígenas etc);
-2) Na segurança pública, Dória-Covas parecem dar mais atenção à Zeladoria e limpeza da cidade, dentro do programa Cidade Linda. Já Haddad parece dar mais atenção aos direitos humanos, como o desarmamento, mediação de conflitos, violência sexual e meio ambiente. Ambos também tem agenda repressora às drogas e aos ambulantes.
-3) A saúde parece não ter variação entre as gestões, tendo continuidade e se apresentando mais como um programa de Estado que um programa de Governo. Sempre se fala de prevenção, saúde da mulher, maternidade, cuidado com o idoso, dengue, vacinação, hiv e Carnaval. Na gestão Dória também encontramos um tópico sobre o Corujão para acabar com as filas nas UBSs.
-
-## Futuro
-Recomendamos aos clientes incorporarem as seguintes ferramentas além das disponíveis no nosso MVP:
-- Automatizar (mais) nossas pipelines, transformando as funções em classes;
-- Incorporar e automatizar os hiperparâmetros;
-- Automatizar o reto de documentos mais importantes por tópico;
-- Comparação entre tópicos no corpus, através de Structured Topic Model (biblioteca de R) em um heatmap;
-- NER;
-- Sentiment Analysis;
-
-## Agradecimentos
-
-* Especialmente à Rai e Adriano, que são pessoas incríveis, muito inteligentes e muito pacientes;
-* Aos meus colegas: Eduardo, Aline, Matheus, Márcio e Luís;
-* E a todos da Ironhack que tornaram possível esse Bootcamp que é uma experiência única de vida!
-* E a todos que já passaram ou que ainda passarão pela Ironhack, que é uma comunidade!
-
-## Links
-
-  - Repositório: https://github.com/ggnicolau/Ironhack_final
-  - Códigos em Python do modelo de tópicos e do workflow: (https://github.com/ggnicolau/Ironhack_final/tree/main/py%20files)
-  - Códigos em PHP de web scraping das notícias institucionais: (https://github.com/ggnicolau/Ironhack_final/tree/main/PHP%20webscraping)
-  - Exemplos visuais do nosso produto: (https://github.com/ggnicolau/Ironhack_final/tree/main/Presentation)
-  - Ver apresentação completa, com mais gráficos e análises, baixando o arquivo executável (.exe) do Prezi em: (https://github.com/ggnicolau/Ironhack_final/tree/main/Presentation)
-  - Se quiserem acesso a todas as visualizações geradas automaticamente pela nossa pipeline, acessar aqui: (https://github.com/ggnicolau/Ironhack_final/tree/main/All%20Visualizations)
-  - Se quiserem todas as nossas tabelas limpas sem lematização, acessar: (https://github.com/ggnicolau/Ironhack_final/tree/main/tables_clean_no_lem)
-  - Se quiserem todas as tabelas limpas e lematizadas, acessar: (https://github.com/ggnicolau/Ironhack_final/tree/main/tables_clean_lem)
-  - Se quiserem acesso a todas as notícias institucionais coletadas, acesso em: (https://github.com/ggnicolau/Ironhack_final/tree/main/News)
-
-## Versioning
-
-1.0.0.0
-
-## Autor
-
-* **Guilherme Giuliano Nicolau**: @ggnicolau (https://github.com/ggnicolau)
-
-</div>
-
-<!--GITHUB_ACTIVITY:{"rows": 5}-->
-
----
-
-<div align="center">
-
-<br/><br/>
-![Quote](https://github-readme-quotes.herokuapp.com/quote?theme=dark&animation=grow_out_in)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ggnicolau&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
-![https://medium.com/@ggnicolau](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)
-
-
-</div>
+## Scripts
+Conclusion Report: https://github.com/ggnicolau/Albert_Einstein/tree/main/py_files/conclusion_report
+
+Repository: https://github.com/ggnicolau/Albert_Einstein
+
+Python Files: https://github.com/ggnicolau/Albert_Einstein/tree/main/py_files
+
+Profiling Report:  https://github.com/ggnicolau/Albert_Einstein/tree/main/Profiling_report
+
+Pictures: https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures
+
+Pickle Files: https://github.com/ggnicolau/Albert_Einstein/tree/main/Models_backup
+
+## Technical articles
+https://towardsdatascience.com/machine-learning-multiclass-classification-with-imbalanced-data-set-29f6a177c1a
+https://medium.com/analytics-vidhya/multi-class-ml-models-evaluation-103c9fdadb41
+https://towardsdatascience.com/xgboost-for-multi-class-classification-799d96bcd368
+https://medium.com/swlh/support-vector-regression-explained-for-beginners-2a8d14ba6e5d
+https://towardsdatascience.com/machine-learning-multiclass-classification-with-imbalanced-data-set-29f6a177c1a
+https://machinelearningmastery.com/xgboost-for-imbalanced-classification/
+https://towardsdatascience.com/multiclass-classification-with-support-vector-machines-svm-kernel-trick-kernel-functions-f9d5377d6f02
+https://medium.com/pursuitnotes/support-vector-regression-in-6-steps-with-python-c4569acd062d
+https://www.baeldung.com/cs/svm-multiclass-classification
+https://medium.com/@b.terryjack/tips-and-tricks-for-multi-class-classification-c184ae1c8ffc
+https://towardsdatascience.com/machine-learning-multiclass-classification-with-imbalanced-data-set-29f6a177c1a
+https://towardsdatascience.com/multi-class-metrics-made-simple-part-ii-the-f1-score-ebe8b2c2ca1
+https://medium.com/swlh/visualizing-svm-with-python-4b4b238a7a92
+https://stackoverflow.com/questions/41592661/determining-the-most-contributing-features-for-svm-classifier-in-sklearn
+https://antonhaugen.medium.com/intro-to-support-vector-machines-2bfbfec6517a
+https://towardsdatascience.com/svm-kernels-what-do-they-actually-do-56ce36f4f7b8
+https://stackoverflow.com/questions/43284811/plot-svm-with-matplotlib
+https://edisciplinas.usp.br/pluginfile.php/4144383/mod_resource/content/1/svm.pdf
+https://jakevdp.github.io/PythonDataScienceHandbook/05.07-support-vector-machines.html
+https://stackoverflow.com/questions/31265110/does-gridsearchcv-not-support-multi-class
+https://towardsdatascience.com/20x-times-faster-grid-search-cross-validation-19ef01409b7c
+https://stackoverflow.com/questions/59666138/sklearn-roc-auc-score-with-multi-class-ovr-should-have-none-average-available
+https://medium.com/analytics-vidhya/root-mean-square-log-error-rmse-vs-rmlse-935c6cc1802a
+https://stackoverflow.com/questions/31421413/how-to-compute-precision-recall-accuracy-and-f1-score-for-the-multiclass-case
+https://towardsdatascience.com/multi-class-metrics-made-simple-part-ii-the-f1-score-ebe8b2c2ca1
+https://medium.com/mlearning-ai/shap-force-plots-for-classification-d30be430e195
+https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12
