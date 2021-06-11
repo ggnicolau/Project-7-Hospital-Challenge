@@ -46,20 +46,43 @@ One day at LinkdIn, a data scientist worker from a famous private Hospital in SÃ
 
 #### Technologies
 * Python version  3.9
-* PHP
 * postgreSQL
-* Prezi
+* Git
+
 
 #### Tools
 * Atom
-* pgAdmin
 * Jupyter IPython
-* Git
 
 #### Services
 * Github
 
 #### Python Libraries
+* pandas
+* warnings
+* numpy
+* seaborn
+* matplotlib
+* sklearn
+* pandas_profiling
+* IPython
+* pycaret
+* xgboost
+* GridSearchCV
+* shap
+* mlxtend
+* ipywidgets
+* mpl_toolkits
+
+
+
+
+
+
+
+
+
+
 * os
 * glob
 * tika
