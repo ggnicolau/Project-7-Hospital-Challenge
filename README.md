@@ -87,46 +87,43 @@ One day at LinkdIn, a data scientist worker from a famous private Hospital in SÃ
 
 
 ## Scripts
-Conclusion Report: https://github.com/ggnicolau/Albert_Einstein/tree/main/py_files/conclusion_report
+* Conclusion Report: https://github.com/ggnicolau/Project-7-Hospital-Challenge/tree/main/conclusion_report
+* Repository: https://github.com/ggnicolau/Albert_Einstein
+* Python Files: https://github.com/ggnicolau/Albert_Einstein/tree/main/py_files
+* Profiling Report:  https://github.com/ggnicolau/Albert_Einstein/tree/main/Profiling_report
+* Pictures: https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures
+* Pickle Files: https://github.com/ggnicolau/Albert_Einstein/tree/main/Models_backup
 
-Repository: https://github.com/ggnicolau/Albert_Einstein
-
-Python Files: https://github.com/ggnicolau/Albert_Einstein/tree/main/py_files
-
-Profiling Report:  https://github.com/ggnicolau/Albert_Einstein/tree/main/Profiling_report
-
-Pictures: https://github.com/ggnicolau/Albert_Einstein/tree/main/Pictures
-
-Pickle Files: https://github.com/ggnicolau/Albert_Einstein/tree/main/Models_backup
 
 ## Technical articles
-https://towardsdatascience.com/machine-learning-multiclass-classification-with-imbalanced-data-set-29f6a177c1a
-https://medium.com/analytics-vidhya/multi-class-ml-models-evaluation-103c9fdadb41
-https://towardsdatascience.com/xgboost-for-multi-class-classification-799d96bcd368
-https://medium.com/swlh/support-vector-regression-explained-for-beginners-2a8d14ba6e5d
-https://towardsdatascience.com/machine-learning-multiclass-classification-with-imbalanced-data-set-29f6a177c1a
-https://machinelearningmastery.com/xgboost-for-imbalanced-classification/
-https://towardsdatascience.com/multiclass-classification-with-support-vector-machines-svm-kernel-trick-kernel-functions-f9d5377d6f02
-https://medium.com/pursuitnotes/support-vector-regression-in-6-steps-with-python-c4569acd062d
-https://www.baeldung.com/cs/svm-multiclass-classification
-https://medium.com/@b.terryjack/tips-and-tricks-for-multi-class-classification-c184ae1c8ffc
-https://towardsdatascience.com/machine-learning-multiclass-classification-with-imbalanced-data-set-29f6a177c1a
-https://towardsdatascience.com/multi-class-metrics-made-simple-part-ii-the-f1-score-ebe8b2c2ca1
-https://medium.com/swlh/visualizing-svm-with-python-4b4b238a7a92
-https://stackoverflow.com/questions/41592661/determining-the-most-contributing-features-for-svm-classifier-in-sklearn
-https://antonhaugen.medium.com/intro-to-support-vector-machines-2bfbfec6517a
-https://towardsdatascience.com/svm-kernels-what-do-they-actually-do-56ce36f4f7b8
-https://stackoverflow.com/questions/43284811/plot-svm-with-matplotlib
-https://edisciplinas.usp.br/pluginfile.php/4144383/mod_resource/content/1/svm.pdf
-https://jakevdp.github.io/PythonDataScienceHandbook/05.07-support-vector-machines.html
-https://stackoverflow.com/questions/31265110/does-gridsearchcv-not-support-multi-class
-https://towardsdatascience.com/20x-times-faster-grid-search-cross-validation-19ef01409b7c
-https://stackoverflow.com/questions/59666138/sklearn-roc-auc-score-with-multi-class-ovr-should-have-none-average-available
-https://medium.com/analytics-vidhya/root-mean-square-log-error-rmse-vs-rmlse-935c6cc1802a
-https://stackoverflow.com/questions/31421413/how-to-compute-precision-recall-accuracy-and-f1-score-for-the-multiclass-case
-https://towardsdatascience.com/multi-class-metrics-made-simple-part-ii-the-f1-score-ebe8b2c2ca1
-https://medium.com/mlearning-ai/shap-force-plots-for-classification-d30be430e195
-https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12
+
+* https://towardsdatascience.com/machine-learning-multiclass-classification-with-imbalanced-data-set-29f6a177c1a
+* https://medium.com/analytics-vidhya/multi-class-ml-models-evaluation-103c9fdadb41
+* https://towardsdatascience.com/xgboost-for-multi-class-classification-799d96bcd368
+* https://medium.com/swlh/support-vector-regression-explained-for-beginners-2a8d14ba6e5d
+* https://towardsdatascience.com/machine-learning-multiclass-classification-with-imbalanced-data-set-29f6a177c1a
+* https://machinelearningmastery.com/xgboost-for-imbalanced-classification/
+* https://towardsdatascience.com/multiclass-classification-with-support-vector-machines-svm-kernel-trick-kernel-functions-f9d5377d6f02
+* https://medium.com/pursuitnotes/support-vector-regression-in-6-steps-with-python-c4569acd062d
+* https://www.baeldung.com/cs/svm-multiclass-classification
+* https://medium.com/@b.terryjack/tips-and-tricks-for-multi-class-classification-c184ae1c8ffc
+* https://towardsdatascience.com/machine-learning-multiclass-classification-with-imbalanced-data-set-29f6a177c1a
+* https://towardsdatascience.com/multi-class-metrics-made-simple-part-ii-the-f1-score-ebe8b2c2ca1
+* https://medium.com/swlh/visualizing-svm-with-python-4b4b238a7a92
+* https://stackoverflow.com/questions/41592661/determining-the-most-contributing-features-for-svm-classifier-in-sklearn
+* https://antonhaugen.medium.com/intro-to-support-vector-machines-2bfbfec6517a
+* https://towardsdatascience.com/svm-kernels-what-do-they-actually-do-56ce36f4f7b8
+* https://stackoverflow.com/questions/43284811/plot-svm-with-matplotlib
+* https://edisciplinas.usp.br/pluginfile.php/4144383/mod_resource/content/1/svm.pdf
+* https://jakevdp.github.io/PythonDataScienceHandbook/05.07-support-vector-machines.html
+* https://stackoverflow.com/questions/31265110/does-gridsearchcv-not-support-multi-class
+* https://towardsdatascience.com/20x-times-faster-grid-search-cross-validation-19ef01409b7c
+* https://stackoverflow.com/questions/59666138/sklearn-roc-auc-score-with-multi-class-ovr-should-have-none-average-available
+* https://medium.com/analytics-vidhya/root-mean-square-log-error-rmse-vs-rmlse-935c6cc1802a
+* https://stackoverflow.com/questions/31421413/how-to-compute-precision-recall-accuracy-and-f1-score-for-the-multiclass-case
+* https://towardsdatascience.com/multi-class-metrics-made-simple-part-ii-the-f1-score-ebe8b2c2ca1
+* https://medium.com/mlearning-ai/shap-force-plots-for-classification-d30be430e195
+* https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12
 
 
 ## Versioning
