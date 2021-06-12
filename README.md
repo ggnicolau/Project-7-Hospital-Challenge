@@ -44,6 +44,8 @@
 # Hospital Challenge
 One day at LinkdIn, a data scientist worker from a famous private Hospital in São Paulo sent me a message. He proposed me a challenge. He gave a CSV file with 4 columns and asked me to provide and compare two predictive models using machine learning algorithms with my favorite programming language. I accepted the challenge, of course.
 
+[<span style="font-size:1.5em;">Click here if you want to check our conclusions on the case. </span>](https://github.com/ggnicolau/Project-7-Hospital-Challenge/blob/main/presentation.md)
+
 #### Technologies
 * Python version  3.9
 * postgreSQL
